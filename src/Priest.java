@@ -5,18 +5,18 @@ public class Priest extends People { //Priest is a subclass of People and uses t
         super(name); //calls to the original method in People
     }
 
-    @Override //overrides the original method, this makes it so that i dont have to keep making new methods.
-    public void giveRequest(Meters health, Meters money, Meters religion, Meters happy) { //The characters request, able to alter all the meters.
-            int randomRequest = (int) (Math.random()*3);
-            switch (randomRequest){
-                case 0:
-                    request1(health, money, religion, happy);
-                case 1:
-                    request2(health,money,religion,happy);
-                case 3: request3(health,money,religion,happy);
-
-            }
+    @Override
+    public void giveRequest(Meters health, Meters money, Meters religion, Meters happy) {
+        int randomRequest = (int) (Math.random()*3);
+        if (randomRequest == 0){
+            request1(health, money, religion, happy);
+        } else if (randomRequest == 1) {
+            request2(health, money, religion, happy);
+        } else if (randomRequest == 2) {
+            request3(health, money, religion, happy);
+        }
     }
+
     private void request1(Meters health, Meters money, Meters religion, Meters happy){
        Scanner scan = new Scanner(System.in);
         System.out.println("The priest, " + getName() + ", asks if you would donate to help build a temple. Do you help?\n");

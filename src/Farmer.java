@@ -8,13 +8,12 @@ public class Farmer extends People { //All notes same as in Priest.java
     @Override
     public void giveRequest(Meters health, Meters money, Meters religion, Meters happy) {
         int randomRequest = (int) (Math.random()*3);
-        switch (randomRequest){
-            case 0:
-                request1(health, money, religion, happy);
-            case 1:
-                request2(health,money,religion,happy);
-            case 3: request3(health,money,religion,happy);
-
+        if (randomRequest == 0){
+            request1(health, money, religion, happy);
+        } else if (randomRequest == 1) {
+            request2(health, money, religion, happy);
+        } else if (randomRequest == 2) {
+            request3(health, money, religion, happy);
         }
     }
     private void request1(Meters health, Meters money, Meters religion, Meters happy){
@@ -39,7 +38,7 @@ public class Farmer extends People { //All notes same as in Priest.java
     private void request2(Meters health, Meters money, Meters religion, Meters happy){
         Scanner scan = new Scanner(System.in);
         System.out.println("The farmer, " + getName() + ", says that the rich are treated better than the poor, which is unfair. Will you tax the rich more?\n");
-        System.out.println("1. Yes 2. \nNo\n");
+        System.out.println("1. Yes \n2.No\n");
         try {
             int choice = scan.nextInt();
             if (choice == 1) {
