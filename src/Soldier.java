@@ -20,7 +20,7 @@ public class Soldier extends People { //All notes same as in Priest.java
     private void request1(Meters health, Meters money, Meters religion, Meters happy){
         Scanner scan = new Scanner(System.in);
         System.out.println("The soldier, " + getName() + ", says there isn't enough resources for the army. Will you increase the budget?\n");
-        System.out.println("1. Yes 2. No\n");
+        System.out.println("1. Yes \n2. No\n");
         try {
             int choice = scan.nextInt();
             if (choice == 1) {
@@ -42,7 +42,7 @@ public class Soldier extends People { //All notes same as in Priest.java
     private void request2(Meters health, Meters money, Meters religion, Meters happy){
         Scanner scan = new Scanner(System.in);
         System.out.println("The soldier, " + getName() + ",wants to strengthen the military by drafting people. Will you go through with this? \n");
-        System.out.println("1. Yes 2. No\n");
+        System.out.println("1. Yes \n2. No\n");
         try {
             int choice = scan.nextInt();
             if (choice == 1) {
@@ -64,7 +64,7 @@ public class Soldier extends People { //All notes same as in Priest.java
     private void request3(Meters health, Meters money, Meters religion, Meters happy){
         Scanner scan = new Scanner(System.in);
         System.out.println("The soldier, " + getName() + ", says that criminals are everywhere and you need to watch everyone to be safe. Up the surveillance in the kingdom?\n");
-        System.out.println("1. Yes 2. No\n");
+        System.out.println("1. Yes \n2. No\n");
         try {
             int choice = scan.nextInt();
             if (choice == 1) {

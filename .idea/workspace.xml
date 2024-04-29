@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d0f5cbc-e2b3-440b-9435-b9ce4850b22f" name="Changes" comment="casd">
-      <change afterPath="$PROJECT_DIR$/src/Farmer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/People.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Priest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Soldier.java" afterDir="false" />
+    <list default="true" id="1d0f5cbc-e2b3-440b-9435-b9ce4850b22f" name="Changes" comment="klar">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Dialogues.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,13 +58,21 @@
       <option name="project" value="LOCAL" />
       <updated>1714369159936</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="klar">
+      <created>1714388108818</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1714388108818</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="gt7yuhikl" />
     <MESSAGE value="casd" />
-    <option name="LAST_COMMIT_MESSAGE" value="casd" />
+    <MESSAGE value="klar" />
+    <option name="LAST_COMMIT_MESSAGE" value="klar" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

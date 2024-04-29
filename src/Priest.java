@@ -20,7 +20,7 @@ public class Priest extends People { //Priest is a subclass of People and uses t
     private void request1(Meters health, Meters money, Meters religion, Meters happy){
        Scanner scan = new Scanner(System.in);
         System.out.println("The priest, " + getName() + ", asks if you would donate to help build a temple. Do you help?\n");
-        System.out.println("1. Yes 2. No\n");
+        System.out.println("1. Yes \n2. No\n");
         try {
             int choice = scan.nextInt();
             if (choice == 1) {
@@ -42,7 +42,7 @@ public class Priest extends People { //Priest is a subclass of People and uses t
     private void request2(Meters health, Meters money, Meters religion, Meters happy){
         Scanner scan = new Scanner(System.in);
         System.out.println("The priest, " + getName() + ", wants everyone to make an offering to god with something valuable, you will of course get a share of the money.\n");
-        System.out.println("1. Agree 2. Do not \n");
+        System.out.println("1. Agree \n2. Do not \n");
         try {
             int choice = scan.nextInt();
             if (choice == 1) {
@@ -64,9 +64,9 @@ public class Priest extends People { //Priest is a subclass of People and uses t
     private void request3(Meters health, Meters money, Meters religion, Meters happy){
         Scanner scan = new Scanner(System.in);
         System.out.println("The priest, " + getName() + ", says that their religion needs to be taught to children at a younger age.\n");
-        System.out.println("1. You Agree 2. You Do Not\n");
+        System.out.println("1. You Agree \n2. You Do Not\n");
         try {
-            int choice = scan.nextInt();
+
             if (choice == 1) {
                 System.out.println("The schools start teaching about religion earlier, making some feel like they are forced into it.\n");
                 happy.worthDown(5);

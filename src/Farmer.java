@@ -20,7 +20,7 @@ public class Farmer extends People { //All notes same as in Priest.java
     private void request1(Meters health, Meters money, Meters religion, Meters happy){
         Scanner scan = new Scanner(System.in);
         System.out.println("The farmer, " + getName() + ", says that the crops are dying and need better fertilizer, will you help?\n");
-        System.out.println("1. Yes 2. No\n");
+        System.out.println("1. Yes \n2. No\n");
         try {
             int choice = scan.nextInt();
             if (choice == 1) {
@@ -39,7 +39,7 @@ public class Farmer extends People { //All notes same as in Priest.java
     private void request2(Meters health, Meters money, Meters religion, Meters happy){
         Scanner scan = new Scanner(System.in);
         System.out.println("The farmer, " + getName() + ", says that the rich are treated better than the poor, which is unfair. Will you tax the rich more?\n");
-        System.out.println("1. Yes 2. No\n");
+        System.out.println("1. Yes 2. \nNo\n");
         try {
             int choice = scan.nextInt();
             if (choice == 1) {
@@ -59,7 +59,7 @@ public class Farmer extends People { //All notes same as in Priest.java
     private void request3(Meters health, Meters money, Meters religion, Meters happy){
         Scanner scan = new Scanner(System.in);
         System.out.println("The farmer, " + getName() + ", threatens you saying he will kill everything and everyone. What do you do?\n");
-        System.out.println("1. Imprison him to keep everyone safe 2. Laugh it off, he is poor and stupid. Stupid farmer what will he do\n");
+        System.out.println("1. Imprison him to keep everyone safe \n2. Laugh it off, he is poor and stupid. Stupid farmer what will he do\n");
         try {
             int choice = scan.nextInt();
             if (choice == 1) {
