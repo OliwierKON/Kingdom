@@ -6,8 +6,8 @@ public class Priest extends People { //Priest is a subclass of People and uses t
     }
 
     @Override
-    public void giveRequest(Meters health, Meters money, Meters religion, Meters happy) {
-        int randomRequest = (int) (Math.random()*3);
+    public void giveRequest(Meters health, Meters money, Meters religion, Meters happy) { //Request method decidec which request will be given randomly
+        int randomRequest = (int) (Math.random()*3); //generates number from 0-2
         if (randomRequest == 0){
             request1(health, money, religion, happy);
         } else if (randomRequest == 1) {
@@ -17,7 +17,7 @@ public class Priest extends People { //Priest is a subclass of People and uses t
         }
     }
 
-    private void request1(Meters health, Meters money, Meters religion, Meters happy){
+    private void request1(Meters health, Meters money, Meters religion, Meters happy){ //allows method to change the parameters
        Scanner scan = new Scanner(System.in);
         System.out.println("The priest, " + getName() + ", asks if you would donate to help build a temple. Do you help?\n");
         System.out.println("1. Yes \n2. No\n");
