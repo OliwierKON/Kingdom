@@ -66,7 +66,7 @@ public class Priest extends People { //Priest is a subclass of People and uses t
         System.out.println("The priest, " + getName() + ", says that their religion needs to be taught to children at a younger age.\n");
         System.out.println("1. You Agree \n2. You Do Not\n");
         try {
-
+                int choice = scan.nextInt();
             if (choice == 1) {
                 System.out.println("The schools start teaching about religion earlier, making some feel like they are forced into it.\n");
                 happy.worthDown(5);
