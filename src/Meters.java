@@ -11,7 +11,6 @@ public class Meters {
     }
 
     public String getmeterName() { //allows for printing of the current set name of the meter
-
         return meterName;
     }
 
