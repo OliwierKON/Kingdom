@@ -82,35 +82,42 @@ public class Game {
             Turn++; //Turn count goes up
             People visitor = generateRandomVisitor(); // makes a new visitor each turn
             visitor.giveRequest(health, money, religion, happy); //makes the visitor give a request with access to all the meters
-            if (health.getCurrentworth() == 0) {
-                System.out.println("The plague takes the kingdom and everyone dies. You Lose.\n Your kingdom managed for " + Turn + " turns.");
-                rungame = false;
-            } else if (health.getCurrentworth() == health.getMaxworth()) {
-                System.out.println("The strong military went against the king and you lost all power. You Lose\n Your kingdom managed for " + Turn + " turns.");
-                rungame = false;
-            } else if (money.getCurrentworth() == 0) {
-                System.out.println("Your people starve as no one can afford to buy food, they start to go against the king.  You Lose.\n Your kingdom managed for " + Turn + " turns.");
-                rungame = false;
-            } else if (money.getCurrentworth() == money.getMaxworth()) {
-                System.out.println("You had so much money that you bought 100 other kingdoms. You forgot your avanza lösenord though and the stock market crashed and you couldn't sell so you are broke now and have no kingdoms at all, brokie. You Lose.\n Your kingdom managed for " + Turn + " turns.");
-                rungame = false;
-            } else if (religion.getCurrentworth() == 0) {
-                System.out.println("People start to lose hope and faith. They do not believe in anything anymore, not even their king. You Lose.\n Your kingdom managed for " + Turn + " turns.");
-                rungame = false;
-            } else if (religion.getCurrentworth() == religion.getMaxworth()) {
-                System.out.println("The people voted for a Pope to lead the kingdom, you have no power. You Lose.\n Your kingdom managed for " + Turn + " turns.");
-                rungame = false;
-            } else if (happy.getCurrentworth() == 0) {
-                System.out.println("No one is happy, not even you. You die of sadness in your sleep. You Lose.\n Your kingdom managed for " + Turn + " turns.");
-                rungame = false;
-            } else if (happy.getCurrentworth() == happy.getMaxworth()) {
-                System.out.println("Everyone is too happy, they forget about their problems. An enemy kingdom attacked but your people refused to fight because they wanted to make love not war. You all died. You Lose.\n Your kingdom managed for " + Turn + " turns.");
-                rungame = false;
-            } else if (happy.getCurrentworth() == 0 && religion.getCurrentworth() == 0 && money.getCurrentworth() == 0 && health.getCurrentworth() == 0) {
-                System.out.println("He was not kidding. You Lose\n");
-                rungame = false;
-            }
+            checkLoss();
         }
     }
-}
 
+    private void checkLoss() {
+
+        if (health.getCurrentworth() == 0) {
+            System.out.println("The plague takes the kingdom and everyone dies. You Lose.\n Your kingdom managed for " + Turn + " turns.");
+            System.exit(0);
+        } else if (health.getCurrentworth() == health.getMaxworth()) {
+            System.out.println("The strong military went against the king and you lost all power. You Lose\n Your kingdom managed for " + Turn + " turns.");
+            System.exit(0);
+        } else if (money.getCurrentworth() == 0) {
+            System.out.println("Your people starve as no one can afford to buy food, they start to go against the king.  You Lose.\n Your kingdom managed for " + Turn + " turns.");
+            System.exit(0);
+        } else if (money.getCurrentworth() == money.getMaxworth()) {
+            System.out.println("You had so much money that you bought 100 other kingdoms. You forgot your avanza lösenord though and the stock market crashed and you couldn't sell so you are broke now and have no kingdoms at all, brokie. You Lose.\n Your kingdom managed for " + Turn + " turns.");
+            System.exit(0);
+        } else if (religion.getCurrentworth() == 0) {
+            System.out.println("People start to lose hope and faith. They do not believe in anything anymore, not even their king. You Lose.\n Your kingdom managed for " + Turn + " turns.");
+            System.exit(0);
+        } else if (religion.getCurrentworth() == religion.getMaxworth()) {
+            System.out.println("The people voted for a Pope to lead the kingdom, you have no power. You Lose.\n Your kingdom managed for " + Turn + " turns.");
+            System.exit(0);
+        } else if (happy.getCurrentworth() == 0) {
+            System.out.println("No one is happy, not even you. You die of sadness in your sleep. You Lose.\n Your kingdom managed for " + Turn + " turns.");
+            System.exit(0);
+        } else if (happy.getCurrentworth() == happy.getMaxworth()) {
+            System.out.println("Everyone is too happy, they forget about their problems. An enemy kingdom attacked but your people refused to fight because they wanted to make love not war. You all died. You Lose.\n Your kingdom managed for " + Turn + " turns.");
+            System.exit(0);
+        } else if (happy.getCurrentworth() == 0 && religion.getCurrentworth() == 0 && money.getCurrentworth() == 0 && health.getCurrentworth() == 0) {
+            System.out.println("He was not kidding. You Lose\n");
+            System.exit(0);
+        }
+
+
+    }
+
+}
